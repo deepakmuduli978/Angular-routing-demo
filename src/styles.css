@@ -1,0 +1,28 @@
+/* You can add global styles to this file, and also import other style files */
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: linear-gradient(
+    90deg,
+    #d81313 0%,
+    #f41b1b 33.33%,
+    #f4f2f2 33.33%,
+    #fdfcfc 66.66%,
+    #007a3d 66.66%,
+    #007a3d 100%
+  );
+  background-size: 300% 300%;
+  animation: flagWave 6s ease-in-out infinite;
+}
+
+@keyframes flagWave {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
